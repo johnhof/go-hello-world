@@ -1,5 +1,5 @@
 package speaker
 
-func SayHello (s int) {
-    Say("Hello", s)
+func (s Speaker) SayHello (sec int) {
+    s.Say("Hello", sec)
 }

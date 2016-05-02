@@ -6,10 +6,11 @@ import (
 )
 
 func main()  {
+    s, _ := speaker.New()
     fmt.Println("Starting Hello")
-    go speaker.SayHello(5)
+    go s.SayHello(5)
     fmt.Println("Starting World")
-    go speaker.SayWorld(3)
+    go s.SayWorld(3)
     fmt.Println("Starting World")
-    speaker.Say(".", 1)
+    s.Say(".", 1)
 }
