@@ -7,5 +7,6 @@ A very simple hello world example in go
 - language basics
 - multiple returns
 - imports
-- goroutines
+- structs
 - packages
+- goroutines
