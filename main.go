@@ -6,7 +6,10 @@ import (
 )
 
 func main()  {
-    s, _ := speaker.New()
+    s, e := speaker.New()
+    if e != nil {
+		panic(e)
+	}
     fmt.Println("Starting Hello")
     go s.SayHello(5)
     fmt.Println("Starting World")
